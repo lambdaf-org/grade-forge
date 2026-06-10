@@ -5,18 +5,18 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=nextdotjs&logoColor=white)
 
-rechenschaft is a browser-only weighted-average calculator that shows its work. Enter your grades, pick a system, and for every average it prints the inputs, the formula, and the rounding rule it applied — no accounts, no portal, nothing leaving the page. It ships with ~20 country presets and a custom-scale builder, so it handles count-up scales (Switzerland 1–6, France 0–20), count-down scales (Germany and Austria, where 1 is best and 4 still passes), and letter or GPA scales (US/Canada, Denmark's 7-trin), each with its own bounds, pass mark, decimals, and localized verdict word.
+GradeForge is a browser-only weighted-average calculator that shows its work. Enter your grades, pick a system, and for every average it prints the inputs, the formula, and the rounding rule it applied — no accounts, no portal, nothing leaving the page. It ships with ~20 country presets and a custom-scale builder, so it handles count-up scales (Switzerland 1–6, France 0–20), count-down scales (Germany and Austria, where 1 is best and 4 still passes), and letter or GPA scales (US/Canada, Denmark's 7-trin), each with its own bounds, pass mark, decimals, and localized verdict word.
 
 <p align="center">
-  <img src="docs/img/calculator.png" alt="The rechenschaft calculator showing a weighted average with its formula receipt" width="640"><br>
+  <img src="docs/img/calculator.png" alt="The GradeForge calculator showing a weighted average with its formula receipt" width="640"><br>
   <sub>The Subjects view with a worked average (sample data)</sub>
 </p>
 
 ## Quickstart
 
 ```bash
-git clone https://github.com/lambdaf-org/rechenschaft
-cd rechenschaft
+git clone https://github.com/lambdaf-org/GradeForge
+cd GradeForge
 npm install
 npm run dev
 ```
@@ -76,7 +76,7 @@ The engine reads `direction`, `bounds`, `pass`, `rounding`, and `decimals` direc
 
 ## Deployment
 
-rechenschaft is a standard Next.js app and stays fully client-side, so it deploys anywhere static or serverless:
+GradeForge is a standard Next.js app and stays fully client-side, so it deploys anywhere static or serverless:
 
 ```bash
 npm run build
