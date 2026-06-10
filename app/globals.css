@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #faf6ee;
+  --card: #fffdf7;
+  --ink: #1c1a17;
+  --muted: #6f6656;
+  --line: #e6dcc8;
+  --forge: #c0341d;
+  --forge-soft: #f5e6df;
+  --ok: #2f7d57;
+  --no: #b23b2e;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-forge: var(--forge);
+  --color-forge-soft: var(--forge-soft);
+  --color-ok: var(--ok);
+  --color-no: var(--no);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-body), Georgia, serif;
+  font-feature-settings: "tnum" 0;
+}
+
+/* Tabular figures everywhere a number is the point. */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Quiet, consistent inputs. */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--forge);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
