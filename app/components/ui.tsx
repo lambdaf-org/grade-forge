@@ -109,11 +109,11 @@ export function GradeRow({ sys, grade, onEdit, onRemove }: {
 }) {
   return (
     <div className="flex items-center gap-2">
-      <input value={grade.label} onChange={(e) => onEdit({ label: e.target.value })} placeholder="label" aria-label="Grade label" className={"min-w-0 flex-1 " + field()} style={{ borderColor: "var(--line)" }} />
+      <input value={grade.label} onChange={(e) => onEdit({ label: e.target.value })} placeholder="Exam" aria-label="Grade label" className={"min-w-0 flex-1 " + field()} style={{ borderColor: "var(--line)" }} />
       <GradeValue sys={sys} value={grade.value} onChange={(v) => onEdit({ value: v })} />
       <span className="text-xs" style={{ color: "var(--muted)" }}>×</span>
       <input value={grade.weight} onChange={(e) => onEdit({ weight: e.target.value })} placeholder="1" inputMode="decimal" aria-label="Grade weight" className={"tnum w-12 text-center " + field()} style={{ borderColor: "var(--line)" }} />
-      <button onClick={onRemove} aria-label="Remove grade" className="px-1 text-base leading-none" style={{ color: "var(--muted)", opacity: 0.45 }}>×</button>
+      <button onClick={onRemove} aria-label="Remove grade" className="px-1 text-base leading-none" style={{ color: "var(--muted)", opacity: 1 }}>×</button>
     </div>
   );
 }

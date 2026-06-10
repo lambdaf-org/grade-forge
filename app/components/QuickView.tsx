@@ -45,7 +45,7 @@ export function QuickView({
           />
         ))}
       </div>
-      <button onClick={actions.addQuick} className="mt-2.5 text-sm font-medium" style={{ color: "var(--forge)" }}>+ grade</button>
+      <button onClick={actions.addQuick} className="mt-2.5 text-sm font-medium" style={{ color: "var(--forge)" }}>+ exam</button>
     </section>
   );
 }

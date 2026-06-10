@@ -63,7 +63,7 @@ export function SubjectsView({
                   {isFinite(res.value) ? fmt(res.value, dp) : "—"}
                 </span>
                 <Verdict r={res} sys={sys} />
-                <button onClick={() => actions.removeSubject(sub.id)} aria-label="Remove subject" className="text-lg leading-none" style={{ color: "var(--muted)", opacity: 0.5 }}>×</button>
+                <button onClick={() => actions.removeSubject(sub.id)} aria-label="Remove subject" className="text-lg leading-none" style={{ color: "var(--muted)", opacity: 1 }}>×</button>
               </div>
 
               <div className="mt-3 space-y-1.5">
@@ -78,7 +78,7 @@ export function SubjectsView({
                 ))}
               </div>
 
-              <button onClick={() => actions.addGrade(sub.id)} className="mt-2.5 text-sm font-medium" style={{ color: "var(--forge)" }}>+ grade</button>
+              <button onClick={() => actions.addGrade(sub.id)} className="mt-2.5 text-sm font-medium" style={{ color: "var(--forge)" }}>+ exam</button>
               <Receipt r={res} show={showWork} dp={dp} />
             </section>
           );
